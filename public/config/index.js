@@ -435,10 +435,10 @@ async function getEntradas() {
 function drawChart1() {
   var data = new google.visualization.DataTable();
   data.addColumn('string', 'Mês');
-  data.addColumn('number', 'Vendas');
+  data.addColumn('number', 'Entradas');
   data.addRows(firebaseDataAux);
   var options = {
-    'title': 'Vendas mensais de 2022',
+    'title': 'Entradas mensais de 2022',
     'width': 1000,
     'height': 400,
     colors: ['#1e4a75', '#1e4a75']
