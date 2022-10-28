@@ -1,0 +1,38 @@
+@import "reset.css";
+@import "fonte.css";
+@import "login.css";
+@import "register.css";
+@import "sidebar.css";
+@import "header.css";
+@import "main.css";
+@import "metas.css";
+@import "entrada.css";
+@import "footer.css";
+@import "graph.css";
+@import "dashboardFaleConosco.css";
+
+
+#logout{
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width: 820px) {
+    .menu{
+        margin-left: -40px;
+    }
+    
+    h1 {
+        font-size: 15px;
+    }
+}
+@media (max-width: 520px) {
+    .menu{
+        margin-left: -40px;
+    } 
+    
+    h1 {
+        font-size: 15px;
+    }
+}
+

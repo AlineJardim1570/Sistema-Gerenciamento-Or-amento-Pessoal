@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    height: 50px;
+    background: #acdbce;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 820px) {
+    .menu{
+        margin-left: -40px;
+    }
+    
+    .titulo h1 {
+        font-size: 15px;
+    }
+    
+    footer{
+        font-size: 10px;
+    }
+}
+@media (max-width: 520px) {
+    .menu{
+        margin-left: -40px;
+    } 
+    
+    .titulo h1 {
+        font-size: 15px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+}
+

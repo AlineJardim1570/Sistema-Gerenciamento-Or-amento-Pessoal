@@ -1,0 +1,102 @@
+.form-field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+
+}
+.titulo{
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.solid{
+    width: 200px;
+    background: #d876c8 ;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(8, 7, 7);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-left: 125px;
+}
+.solid:hover {
+    border: 1px;
+    color: rgb(255, 255, 255);
+    transform: scale(1.10);
+    transition: .2s;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.clear{
+    width: 200px;
+    background: #d876c8 ;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(8, 7, 7);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-left: 125px;
+}
+.clear:hover {
+    border: 1px;
+    color: rgb(255, 255, 255);
+    transform: scale(1.10);
+    transition: .2s;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    
+}
+.panel-row-faleConosco titulo{
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.txt{
+    width: 326px;
+}
+.num{
+    width: 362px;
+}
+.dt{
+    width: 257px;
+    text-align: center;
+}
+.rad{
+    margin-left: 120px;
+}
+.botao {  
+    display: inline-block;  
+    padding: 0.8em 1.2em;    
+    background-color:#0987D2;  
+    text-decoration: none;  
+    color: #ffffff;
+    border-radius:50px;
+    font-family:'open_sansregular';  
+} 
+     
+.flutuante {  
+  display: inline-block;  
+  -webkit-transition-duration: 0.4s;  
+  transition-duration: 0.4s;  
+  -webkit-transition-property: -webkit-transform;  
+  transition-property: transform;  
+  -webkit-transform: translateZ(0);  
+  -ms-transform: translateZ(0);  
+  transform: translateZ(0);  
+  box-shadow: 0px 4px 2px 0px rgba(98, 98, 98, 0.69);
+}  
+      
+.flutuante:hover {  
+  -webkit-transform: translateY(-5px);  
+  -ms-transform: translateY(-5px);  
+  transform: translateY(-5px);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.69);  
+} 

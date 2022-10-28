@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../styles/all.css">
+     <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+     <link rel="icon" href="../image/title.png">
+     <title>Entrada</title>
+ </head>
+ <body>
+    <div class="flex-dashboard">
+        <sidebar>
+            <div class="sidebar-title">
+                <img src="../image/title.png" alt="">
+                <h2>Carteira Fácil</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="dashboard.html">Home</a>
+                    </li>
+                    <li>
+                        <i class='fas fa-money-check-alt'></i>
+                        <a href="entrada.html">Transações</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bullseye"></i>
+                        <a href="metas.html">Metas</a>
+                    </li>
+                    <li>
+                        <i class='fas fa-user-cog'></i>
+                        <a href="dashboardFaleConosco.html">Fale Conosco</a>
+                    </li>
+                </ul>
+            </div>
+         </sidebar>
+         <main>
+             <header>
+                <a href="dashboard.html"> <i class="fa-solid fa-house"></i> Início</a>
+                <button id="logout" onclick="logout()"> <i class="fa-solid fa-right-from-bracket"></i> Logout</button>   
+             </header>
+        <div class="main-content">
+                <div>
+                    <br>
+                    <h1 style="color: black; font-size: 35px;" class="titulo"  id="titulo">Transações</h1>
+                    <br>
+                </div>
+                <div class="caracteristica">
+                    <div class="titulo_caracteristica">
+                        <i class="fa-solid fa-dollar"></i>
+                        <h3>Saldo</h3>
+                        <input type="text" name="saldo" id="saldo" disabled value="0,00">
+                    </div>
+                    <div id="conteudo_caracteristica" class="conteudo_caracteristica">
+                        <table id="table-entradas" class="table-entradas">
+                         
+                                <tr id="tr-entradas">
+                                    <th>Tipo</th>
+                                    <th>Transação</th>
+                                    <th>Descrição</th>
+                                    <th>Valor</th>
+                                    <th>Data</th>
+                                </tr>
+                           
+                            <tbody id="tbody-entradas">
+
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="rodape_caracteristica">
+                        <button id="add_meta" class="adicionar" onclick="newTransaction()">
+                           <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+
+            <footer>
+                Copyright © 2022 | <a href="https://github.com/AlineJardim1570" target="_blank" style="text-decoration:none; color:black;  margin-left: 10px;">  Aline Jardim da Silva </a>
+            </footer>
+          </main>
+     </div>
+     <script>
+         src="../plugins/bootstrap/js/bootstrap.min.js"
+     </script>
+     <script>
+        scr="../plugins/fontawesome/js/all.min.js"
+     </script>
+     
+
+     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+     <script type="module" src="../../config/firebase.js"></script>
+     <script src="../../config/authentication.js"></script>
+     <script src="../../config/entrada.js"></script>
+     <script>
+         document.addEventListener("DOMContentLoaded", function(event) {
+             getEntradas()
+         });
+     </script>
+
+ </body>
+ </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../styles/all.css">
+     <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+     <link rel="icon" href="../image/title.png">
+     <title>Perfil</title>
+ </head>
+ <body>
+    <div class="flex-dashboard">
+        <sidebar>
+            <div class="sidebar-title">
+                <img src="../image/title.png" alt="">
+                <h2>Security Analysis</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="dashboard.html"> Dashboard</a>
+                    </li>
+                    <li>
+                        <i class='fas fa-money-check-alt'></i>
+                        <a href="entrada.html">Entrada</a>
+                    </li>
+                    <li>
+                        <i class='fas fa-piggy-bank'></i>
+                        <a href="gastos.html">Gastos</a>
+                    </li> 
+                    <li>
+                        <i class='fas fa-user-friends'></i>
+                        <a href="dashboardPerfil.html"> Perfil</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bullseye"></i>
+                        <a href="metas.html"> Metas</a>
+                    </li>
+                    <li>
+                        <i class='fas fa-user-cog'></i>
+                        <a href="dashboardFaleConosco.html"> Fale Conosco</a>
+                    </li>
+                </ul>
+            </div>
+         </sidebar>
+         <main>
+             <header>
+                <a href="dashboard.html"> <i class="fa-solid fa-house"></i> Início</a>
+                <button onclick="logout()"> <i class="fa-solid fa-right-from-bracket"></i> Logout</button>  
+             </header>
+             
+            
+                <div class="main-content">
+                    <div class="panel-row-perfil">
+                        <form>
+
+                            <div class="title">
+                                Dados Cadastrais
+                            </div>
+
+                            <div class="form-fale-conosco">
+                            <label for="nomePerfil">Nome:</label>
+                            <input type="text" class="form-fale-conosco" id="nomePerfil" aria-describedby="nomePerfil" value="João Pedro">
+                            <label for="idadePerfil">Idade:</label>
+                            <input type="text" class="form-fale-conosco" id="idadePerfil" aria-describedby="idadePerfil" value="20">
+                            
+                            </div>
+                            <div class="form-fale-conosco">
+                                <label for="generoPerfil">Gênero:</label>
+                                <input type="text" class="form-fale-conosco" id="generoPerfil" aria-describedby="generoPerfil" value="Masculino">
+                                <label for="empresaPerfil">Empresa:</label>
+                                <input type="text" class="form-fale-conosco" id="empresaPerfil" aria-describedby="empresaPerfil" value="Kalunga">
+                                
+                            </div>
+
+                            
+                        </form>
+                    </div>
+                    <div class="main-content-two">
+                        <div class="panel-row-perfil">
+                            <form>
+                                <div class="form-fale-conosco-two">
+                                    <label for="salarioPerfil">Faixa Salarial:</label>
+                                    <input type="text" class="form-fale-conosco-two" id="salarioPerfil" aria-describedby="salarioPerfil" value="R$1001,00 a R$2500,00"> 
+                                    <label for="tempoPerfil">Tempo de Experiência:</label>
+                                    <input type="text" class="form-fale-conosco-two" id="tempoPerfil" aria-describedby="tempoPerfil" value="0 - 1 ano">
+                                    
+                                </div>
+                                <div class="form-fale-conosco-two">
+                                    <label for="acidentePerfil">Já sofreu algum acidente de trabalho?</label>
+                                    <input type="text" class="form-fale-conosco-two" id="acidentePerfil" aria-describedby="acidentePerfil" value="Não">
+                                    <label for="emailPerfil">E-mail:</label>
+                                    <input type="text" class="form-fale-conosco-two" id="emailPerfil" aria-describedby="emailPerfil" value="joao@outlook.com">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            
+
+            
+
+            <footer>
+                Copyright © 2022 | <a href="" target="_blank" style="text-decoration:none">Aline Jardim da Silva </a>
+            </footer>
+          </main>
+     </div>
+     <script>
+         src="../plugins/bootstrap/js/bootstrap.min.js"
+     </script>
+     <script>
+        scr="../plugins/fontawesome/js/all.min.js"
+     </script>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script type="module" src="../../config/firebase.js"></script>
+    <script src="../../config/authentication.js"></script>
+    <script src="../../config/index.js"></script>
+ </body>
+ </html>

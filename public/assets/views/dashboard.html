@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/all.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="icon" href="../image/title.png">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="flex-dashboard">
+        <sidebar>
+            <div class="sidebar-title">
+                <img src="../image/title.png" alt="">
+                <h2>Carteira Fácil</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="dashboard.html">Home</a>
+                    </li>
+                    <li>
+                        <i class='fas fa-money-check-alt'></i>
+                        <a href="entrada.html">Transações</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bullseye"></i>
+                        <a href="metas.html">Metas</a>
+                    </li>
+                    <li>
+                        <i class='fas fa-user-cog'></i>
+                        <a href="dashboardFaleConosco.html">Fale Conosco</a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+        <main>
+            <header>
+                <a href="dashboard.html"> <i class="fa-solid fa-house"></i> Início</a>
+                <button id="logout" onclick="logout()"> <i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+            </header>
+            <div class="titulo">
+                <br>
+                <h1 id="teste"> Análises de transações </h1>
+            </div>
+            <div class="main-content" id="dash">
+                <div id="chart_div1" class="grafico"></div>
+               
+            </div>
+            
+            <div class="main-content" id="dash01">
+                
+                <div id="chart_div2" class="grafico"></div>
+            </div>
+
+            <footer>
+                Copyright © 2022 |<a href="https://github.com/AlineJardim1570" target="_blank" style="text-decoration:none; color:black;  margin-left: 10px;"> Aline Jardim da Silva </a>
+            </footer>
+        </main>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script type="module" src="../../config/firebase.js"></script>
+    <script src="../../config/authentication.js"></script>
+    <script src="../../config/index.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            getEntradas(); ("\n")
+            getDespesas();
+        });
+    </script>
+</body>
+
+</html>

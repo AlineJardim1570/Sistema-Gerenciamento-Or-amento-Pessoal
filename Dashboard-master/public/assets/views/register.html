@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/all.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <link rel="icon" href="../image/title.png">
+    <title>Registrar-se</title>
+</head>
+
+<body>
+    <div class="register-parent">
+        <div class="register">
+            <div class="register-title">
+                <img src="../image/title.png" alt="">
+                <h2>Carteira fácil</h2>
+            </div>
+            <div class="form-group">
+                <label class="title5" for="email">Email</label>
+                <br>
+                <input type="" class="form-control" id="email" aria-describedby="email" placeholder=" seu@email.com"
+                onchange="onChangeEmail()" required>
+                <div class="error" id="email-invalid-error"></div>
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="title5" for="senha">Senha</label>
+                <br>
+                <input type="password" class="form-control" id="password" placeholder="Senha" onchange="onChangePassword()">
+                <div class="error" id="password-required-error"></div>
+                <br>
+            </div>
+            <div class="form-group">
+                <label class="title5" for="senha">Confirme a senha</label>
+                <br>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirmar senha" onchange="onChangeConfirmPassword()">
+                <div class="error" id="confirmPassword-required-error"></div>
+            </div>
+            <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+    </div>
+    <script>
+        src = "../plugins/bootstrap/js/bootstrap.min.js"
+    </script>
+    <script>
+        scr = "../plugins/fontawesome/js/all.min.js"
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script type="module" src="../../config/firebase.js"></script>
+    <script src="../../config/authentication.js"></script>
+    <script src="./config/index.js"></script>
+</body>
+
+</html>

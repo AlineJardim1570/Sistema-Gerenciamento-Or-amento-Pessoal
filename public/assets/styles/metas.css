@@ -1,0 +1,85 @@
+.caracteristica{
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 0.3em rgb(89, 252, 189);
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  min-width: 800px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caracteristica .titulo_caracteristica{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caracteristica .titulo_caracteristica h3{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caracteristica .titulo_caracteristica input{
+  box-shadow: none;
+  width: 150px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.caracteristica #thead_metas{
+  visibility: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caracteristica #tabela_custos input{
+  width: 250px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caracteristica input{
+  padding: 5px;
+  box-shadow: 0 0 0.3em #acdbce;;
+  border: 2px solid #acdbce;;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.caracteristica button{
+  
+  padding: 5px 15px;
+  box-shadow: 0 0 0.3em rgb(75, 65, 211);
+  color: #fff;
+  background: rgb(0, 132, 172);
+  opacity: .7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.caracteristica button:hover{
+  opacity: 1;
+}
+
+.caracteristica .th{
+  margin-left: 50px;
+}
+
+.MenuF{
+  margin-left: -10px;
+}
+
+
